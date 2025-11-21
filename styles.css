@@ -1,0 +1,198 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Google Sans Flex', sans-serif;
+    background-attachment: fixed;
+    background-color: #551d6f;
+    color: white;
+}
+/* Esto afecta a todas las secciones que tengan ID */
+section[id] {
+    scroll-margin-top: 80px; /* Ajusta este número según la altura de tu Navbar */
+}
+
+nav {
+    background-color: #3e0054 !important;
+}
+
+nav .nav-link {
+    color: white !important;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0 15px;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+nav .nav-link:hover {
+    color: #af69cc !important;
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+ 
+}
+
+#SamuelHeader {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-weight: 700;
+}
+
+
+button.btn-primary {
+    background-color: #2f0048;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 10px 10px 0 0;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+}
+
+svg {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+button.btn-primary:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transform: scale(1.05);
+    
+}
+button.btn-primary:active {
+    outline: none;
+    background-color:white !important;
+    color: black !important;
+}
+#Proyectos  {
+    background-color: #3e0054;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#Proyectos button.btn-primary {
+    background-color: #551d6f;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#Proyectos button.btn-primary:hover {
+    background-color: #af69cc;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+#Proyectos h2  {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#Proyectos h5 {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#Proyectos p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* === SISTEMA DE MEDALLAS (BADGES) === */
+
+/* Contenedor de las medallas */
+.badge-case {
+    display: flex;
+    gap: 6px; /* Espacio entre medallas */
+    align-items: center;
+}
+
+/* La medalla individual (Base apagada) */
+.gym-badge {
+    width: 14px;
+    height: 14px;
+    background-color: #2c2c2c; /* Gris oscuro (no conseguida) */
+    border: 2px solid #4a4a4a;
+    transform: rotate(45deg); /* Rombo */
+    box-shadow: 0 0 0 1px #000; /* Borde negro pixel art */
+    margin: 4px; /* Espacio para que no se solapen al rotar */
+    transition: all 0.3s ease;
+}
+#Tecnologias {
+    font-family: 'Pixelify Sans', sans-serif;
+}
+/* Estado: CONSEGUIDA */
+.gym-badge.earned {
+    border-color: #fff;
+    box-shadow: 0 0 4px currentColor, 0 0 0 1px #000; /* Resplandor del color */
+}
+
+/* === ESTILO DE LA LEYENDA === */
+.legend-box {
+    background-color: rgba(255, 255, 255, 0.05); /* Fondo semitransparente */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+#contactoSect {
+    background-color: #3e0054;
+    background-attachment: fixed;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#contactoSect h2  {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#contactbtns {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+form button.btn-primary {
+    background-color: #551d6f;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-socials {
+    width: 50px;        /* Ancho fijo */
+    height: 50px;       /* Alto idéntico al ancho */
+    padding: 0 !important; /* Quitamos el relleno rectangular de Bootstrap */
+    font-size: 1.5rem;  /* Tamaño del icono interior */
+    transition: all 0.3s ease; /* Suavidad si quieres animarlo luego */
+}
+
+/* Opcional: Efecto al pasar el ratón */
+.btn-socials:hover {
+    transform: translateY(-3px); /* Pequeño salto hacia arriba */
+    box-shadow: 0 5px 15px rgba(255,255,255,0.2);
+}
