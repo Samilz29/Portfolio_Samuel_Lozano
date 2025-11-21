@@ -39,8 +39,28 @@ header {
     font-family: 'Pixelify Sans', sans-serif;
     font-weight: 700;
 }
+@media (max-width: 768px) {
+    .fixed-height-text {
+        display: flex !important;
+        flex-direction: row;      /* Fila normal para que el cursor no salte */
+        flex-wrap: wrap;          /* Permite que el texto largo baje */
+        justify-content: center;  /* Centrado horizontal */
+        align-content: center;    /* Centrado vertical */
+        min-height: 140px;        /* Altura reservada */
+        text-align: center;
+    }
 
-
+    #typed-text {
+        font-size: 1.5rem;
+        /* Quitamos cualquier margin que estorbe */
+        margin: 0;
+    }
+    
+    /* Aseguramos que el cursor tenga el tamaño correcto */
+    .typed-cursor {
+        font-size: 1.5rem !important;
+    }
+}
 a.btn-primary {
     background-color: #2f0048;
     border: none;
