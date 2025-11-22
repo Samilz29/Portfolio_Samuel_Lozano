@@ -125,6 +125,17 @@ a.btn-primary:active {
     margin-bottom: 20px;
 }
 
+/* Definimos la altura fija para las fotos de los proyectos */
+.h-custom-card {
+    height: 150px; 
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+
+
 /* === SISTEMA DE MEDALLAS (BADGES) === */
 
 /* Contenedor de las medallas */
@@ -217,6 +228,8 @@ form button.btn-primary {
     box-shadow: 0 5px 15px rgba(255,255,255,0.2);
 }
 
+
+
 /* Contenedor de los puntos */
 .nav-dots {
     position: fixed;
@@ -245,9 +258,42 @@ form button.btn-primary {
     cursor: pointer;
 }
 
-/* Clase para el punto ACTIVO (la sección que estás viendo) */
-.nav-dots .dot.active {
-    background-color: #247dfa; /* Tu azul (o pon white si prefieres) */
-    transform: scale(1.5);
-    box-shadow: 0 0 10px rgba(36, 125, 250, 0.5); /* Resplandor */
+/* =========================================
+   PERSONALIZACIÓN DEL FORMULARIO
+   ========================================= */
+
+/* 1. INPUTS: CAMBIAR EL FOCUS A MORADO */
+/* Esto afecta a los campos de texto cuando haces clic dentro */
+.form-control:focus, 
+.form-control-dark:focus {
+    /* Cambia este HEX por tu morado exacto de fondo si tienes uno, ej: #5f27cd */
+    border-color: #a324fa !important; 
+    
+    /* Esto es el resplandor (glow) exterior. 
+       Los números 'rgba' son el color morado con transparencia. */
+    box-shadow: 0 0 0 0.25rem rgba(163, 36, 250, 0.25) !important; 
+}
+
+/* 1. ESTADO CLICK (Solo mientras mantienes pulsado) -> AZUL */
+#contactoSect .btn-primary:active, 
+#contactoSect .btn-primary:active:focus {
+    background-color: #a324fa !important; /* Tu azul */
+    border-color: #a324fa !important;
+    box-shadow: none !important; 
+}
+
+#contactoSect .btn-primary:hover {
+    background-color: white !important; /* Un azul más claro al hacer hover */
+    color: black;
+    border-color: white !important;
+}
+/* 2. ESTADO FOCUS (Cuando sueltas el click pero sigue seleccionado) -> VUELVE A MORADO */
+/* Esto evita que se quede azul si el formulario da error */
+#contactoSect .btn-primary:focus {
+    /* IMPORTANTE: Pon aquí el color NORMAL de tu botón (tu morado oscuro) */
+    background-color: #5f27cd !important; /* <--- Cambia esto por tu HEX morado original */
+    border-color: #5f27cd !important;     /* <--- Cambia esto por tu HEX morado original */
+
+    /* Le ponemos el resplandor MORADO (igual que los inputs) para que sepa que está seleccionado */
+    box-shadow: 0 0 0 0.25rem rgba(163, 36, 250, 0.5) !important; 
 }

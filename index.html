@@ -80,9 +80,9 @@
         <div class="row  text-center"> 
             <h2 class="section-title">Proyectos Destacados</h2>
 
-            <div class="col-md-4">
+            <div class="col-md-4 g-4">
                 <div class="card mb-4 shadow-sm h-100">
-                    <img src="assets/imgs/Proyectos/PokeAPI.png" class="card-img-top" alt="Proyecto 1">
+                    <img src="assets/imgs/Proyectos/PokeAPI.png" class="card-img-top object-fit-cover h-custom-card" alt="Proyecto 1">
                     <div class="card-body">
                         <h5 class="card-title">PokeAPI</h5>
                         <p class="card-text">Este proyecto utiliza la API(PokeAPI) de Pokémon para mostrar información detallada sobre diferentes pokemons y sus características. En este
@@ -128,9 +128,9 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 g-4">
                 <div class="card mb-4 shadow-sm h-100">
-                    <img src="assets/imgs/Proyectos/proximamente.png" class="card-img-top" alt="Proyecto 2">
+                    <img src="assets/imgs/Proyectos/proximamente.png" class="card-img-top object-fit-cover h-custom-card" alt="Proyecto 2">
                     <div class="card-body">
                         <h5 class="card-title">MoviesNote</h5>
                         <p class="card-text">Este proyecto utiliza la API(The Movie Database) de películas y series para mostrar información detallada sobre diferentes películas y sus características. En este
@@ -176,9 +176,9 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 g-4">
                 <div class="card mb-4 shadow-sm h-100">
-                    <img src="assets/imgs/Proyectos/proximamente.png" class="card-img-top" alt="Proyecto 2">
+                    <img src="assets/imgs/Proyectos/proximamente.png" class="card-img-top object-fit-cover h-custom-card" alt="Proyecto 2">
                     <div class="card-body">
                         <h5 class="card-title">PokeGym</h5>
                         <p class="card-text">
@@ -432,13 +432,13 @@
                     <div class="d-flex align-items-center gap-3 p-3 border border-secondary rounded mb-4" style="background: rgba(255,255,255,0.05);">
                         <i class="bi bi-envelope-at fs-2 text-info"></i> <div>
                             <span class="d-block small">Email de trabajo</span>
-                            <p class="text-white text-decoration-none fs-5 fw-bold text-break">
+                            <p class="text-white text-decoration-none fs-6 fs-md-5 fw-bold text-break">
                                 samilz.contacto@gmail.com
                             </p>
                         </div>
                     </div>
 
-                    <div class="d-flex gap-3">
+                    <div class="d-flex gap-3 justify-content-center justify-content-md-start ">
                         <a href="https://github.com/Samilz29" class="btn btn-outline-light rounded-circle d-flex justify-content-center align-items-center btn-socials">
                             <i class="devicon-github-plain"></i>
                         </a>
@@ -452,33 +452,34 @@
 
             <div class="col-md-6 offset-md-1">
                 <form action="https://formspree.io/f/xzzwzqkn" method="POST" class="p-4 border border-secondary rounded" style="background: rgba(0,0,0,0.2);">
-                    
+                    <p class="text-end text-white-50 small mb-3">
+                        <span class="text-white">*</span> Campos obligatorios
+                    </p>
                     <div class="mb-3">
-                        <label for="nombre" class="form-label text-white">Nombre</label>
+                        <label for="nombre" class="form-label text-white">Nombre*</label>
                         <input type="text" name="name" class="form-control form-control-dark" id="nombre" placeholder="Tu nombre" required>
                     </div>
 
                     <div class="mb-3">
-                        <label for="email" class="form-label text-white">Email</label>
+                        <label for="email" class="form-label text-white">Email*</label>
                         <input type="email" name="email" class="form-control form-control-dark" id="email" placeholder="nombre@ejemplo.com" required>
                     </div>
 
                     <div class="mb-3">
-                        <label for="asunto" class="form-label text-white">Asunto</label>
+                        <label for="asunto" class="form-label text-white">Asunto*</label>
                         <input type="text" name="subject" class="form-control form-control-dark" id="asunto" placeholder="Propuesta de proyecto" required>
                     </div>
 
                     <div class="mb-4">
-                        <label for="mensaje" class="form-label text-white">Mensaje</label>
+                        <label for="mensaje" class="form-label text-white">Mensaje*</label>
                         <textarea name="message" class="form-control form-control-dark" id="mensaje" rows="4" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
                     </div>
-
+                    
                     <button type="submit" class="btn btn-primary w-100 fw-bold py-2">
                         Enviar Mensaje <i class="bi bi-send-fill ms-2"></i>
                     </button>
                 </form>
             </div>
-
         </div>
     </div>
 </section>
